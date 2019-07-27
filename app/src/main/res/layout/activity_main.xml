@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2.85"
+        android:layout_height="match_parent" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_weight="1.85"
+        android:textAlignment="center"
+        android:id="@+id/times"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.72"
+        android:id="@+id/add"
+        android:src="@android:drawable/ic_menu_add" />
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:id="@+id/go"
+        android:layout_height="match_parent"
+        android:layout_weight="0.72"
+        android:src="@android:drawable/ic_menu_send" />
+</LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/choice_items"
+        android:scrollbars="vertical"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>
